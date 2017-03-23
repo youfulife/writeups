@@ -1,2 +1,2 @@
 # writeups
-xxx CTF write up
+XXX CTF write up
