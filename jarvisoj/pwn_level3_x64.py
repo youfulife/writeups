@@ -13,8 +13,10 @@ libc_write_addr = libc.symbols['write']
 libc_system_addr = libc.symbols['system']
 level3_write_plt_addr = level3.plt['write']
 level3_write_got_addr = level3.got['write']
-print hex(level3_write_plt_addr)
-print hex(level3_write_got_addr)
+print 'write_libc: ' + hex(libc_write_addr)
+print 'system_libc: ' + hex(libc_system_addr)
+print 'write_plt: ' + hex(level3_write_plt_addr)
+print 'write_got: ' + hex(level3_write_got_addr)
 # bss_addr = 0x600a88
 # rop0 = 0x400550 # pop rbp ; ret
 # rop0 = 0x400633

